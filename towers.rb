@@ -46,20 +46,6 @@ class TowerOfHanoi
 
   def render
 
-    @current_board.each do |row|
-
-      print row
-      puts''
-
-    end
-
-    @victory_board.each do |row|
-
-      print row
-      puts''
-
-    end
-
     puts "\nCurrent Board:"
 
     @tower_height.times do |row|
@@ -191,6 +177,3 @@ class TowerOfHanoi
 end
 
 # -------------------------------------------------------------------
-
-t = TowerOfHanoi.new(3)
-t.play
